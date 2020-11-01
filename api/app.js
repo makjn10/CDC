@@ -8,6 +8,7 @@ const cookieParser = require("cookie-parser");
 const expressValidators = require("express-validator");
 const commonRoutes = require("./routes/commonRoutes");
 const userRoutes = require("./routes/userRoutes");
+const cdcRoutes = require("./routes/cdcRoutes");
 const fellowshipRoutes = require("./routes/fellowshipRoutes");
 // middilewares
 app.use(bodyParser.json());
@@ -28,7 +29,7 @@ app.use(bodyParser.json());
 app.use("/api", userRoutes);
 app.use("/api", commonRoutes);
 app.use("/api", fellowshipRoutes);
-
+app.use("/api",cdcRoutes);
 
 
 const port=process.env.PORT || 8000

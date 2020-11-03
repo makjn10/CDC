@@ -60,7 +60,15 @@ const Menu=()=>(
                  <li className={isActive('/fellowship/fellowshipBill/jrf') ? "active": ""}><Link className="nav-link"  to="/fellowship/fellowshipBill/jrf"><span>Fellowship Bill(JRF)</span></Link></li>
               </ul>
             </li>
-
+            <li className="dropdown">
+              <a href="#" className="menu-toggle nav-link has-dropdown"><i
+                  data-feather="briefcase"></i><span>Forms</span></a>
+              <ul className="dropdown-menu">
+                 <li className={isActive('/regList') ? "active": ""}><Link className="nav-link"  to="/regList"><span>Registrations</span></Link></li>
+                 <li className={isActive('/infList') ? "active": ""}><Link className="nav-link"  to="/infList"><span>INFs</span></Link></li>
+                 <li className={isActive('/jnfList') ? "active": ""}><Link className="nav-link"  to="/jnfList"><span>JNFs</span></Link></li>
+              </ul>
+            </li>
 
           </ul>
         </aside>

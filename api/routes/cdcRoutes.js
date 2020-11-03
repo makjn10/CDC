@@ -1,15 +1,28 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const {createReg,getRegs,updateReg,login,getINF,updateINF,jnf} = require("../controllers/cdcController");
+const {
+  createReg,
+  getRegs,
+  updateReg,
+  login,
+  getINF,
+  updateINF,
+  getINFList,
+  updateINFList,
+  jnf,
+} = require("../controllers/cdcController");
 
-router.post("/createReg",createReg);
-router.get("/getRegs",getRegs);
-router.post("/updateReg",updateReg);
+router.post("/cdc/createReg", createReg);
+router.get("/cdc/getRegs", getRegs);
+router.post("/cdc/updateReg", updateReg);
 
-router.post("/login",login);
-router.post("/getINF",getINF);
-router.post("/updateINF",updateINF);
+router.post("/cdc/login", login);
+router.post("/cdc/getINF", getINF);
+router.post("/cdc/updateINF", updateINF);
 
-router.post("/jnf",jnf)
+router.get("/cdc/getinflist", getINFList);
+router.post("/cdc/updateinflist", updateINFList);
+
+router.post("/cdc/jnf", jnf);
 
 module.exports = router;

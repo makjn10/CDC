@@ -272,16 +272,17 @@ CREATE TABLE IF NOT EXISTS `infeligiblebranches` (
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
--- Dumping data for table cdc_db.infeligiblebranches: ~5 rows (approximately)
+-- Dumping data for table cdc_db.infeligiblebranches: ~6 rows (approximately)
 /*!40000 ALTER TABLE `infeligiblebranches` DISABLE KEYS */;
 INSERT INTO `infeligiblebranches` (`id`, `companyID`, `Computer Science and Engineering`, `Electronics and Communication Engineering`, `Electrical Engineering`, `Mechanical Engineering`, `Civil Engineering`, `Chemical Engineering`, `Mining Engineering`, `createdAt`, `updatedAt`) VALUES
 	(1, 1, 1, 1, 1, NULL, NULL, NULL, NULL, '2020-11-02 16:54:06', '2020-11-03 11:41:45'),
 	(2, 2, 1, NULL, 1, NULL, 1, NULL, NULL, '2020-11-02 16:55:32', '2020-11-02 17:12:50'),
 	(3, 3, NULL, 1, 1, NULL, NULL, NULL, 1, '2020-11-02 17:18:33', '2020-11-03 14:31:26'),
 	(4, 4, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-11-03 04:35:37', '2020-11-03 04:35:37'),
-	(5, 5, 1, 1, NULL, NULL, NULL, 1, 1, '2020-11-03 12:17:35', '2020-11-03 14:37:56');
+	(5, 5, 1, 1, NULL, NULL, NULL, 1, 1, '2020-11-03 12:17:35', '2020-11-03 14:37:56'),
+	(6, 6, 1, 1, 1, 1, NULL, NULL, NULL, '2020-11-15 08:03:28', '2020-11-15 08:20:55');
 /*!40000 ALTER TABLE `infeligiblebranches` ENABLE KEYS */;
 
 -- Dumping structure for table cdc_db.infgpas
@@ -295,16 +296,17 @@ CREATE TABLE IF NOT EXISTS `infgpas` (
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
--- Dumping data for table cdc_db.infgpas: ~5 rows (approximately)
+-- Dumping data for table cdc_db.infgpas: ~6 rows (approximately)
 /*!40000 ALTER TABLE `infgpas` DISABLE KEYS */;
 INSERT INTO `infgpas` (`id`, `companyID`, `Bachelor of Technology`, `Dual Degree`, `Master of Technology`, `Integrated Master of Technology`, `createdAt`, `updatedAt`) VALUES
 	(1, 1, 5, NULL, NULL, NULL, '2020-11-02 16:54:06', '2020-11-03 11:41:45'),
 	(2, 2, 8, 5, 8, 9, '2020-11-02 16:55:32', '2020-11-02 17:12:50'),
 	(3, 3, 8, 8, 8, 8, '2020-11-02 17:18:33', '2020-11-03 14:31:26'),
 	(4, 4, NULL, NULL, NULL, NULL, '2020-11-03 04:35:37', '2020-11-03 04:35:37'),
-	(5, 5, 6, NULL, 8, NULL, '2020-11-03 12:17:35', '2020-11-03 14:37:56');
+	(5, 5, 6, NULL, 8, NULL, '2020-11-03 12:17:35', '2020-11-03 14:37:56'),
+	(6, 6, 9, 9, 8, 8, '2020-11-15 08:03:28', '2020-11-15 08:20:55');
 /*!40000 ALTER TABLE `infgpas` ENABLE KEYS */;
 
 -- Dumping structure for table cdc_db.infs
@@ -323,16 +325,17 @@ CREATE TABLE IF NOT EXISTS `infs` (
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
--- Dumping data for table cdc_db.infs: ~5 rows (approximately)
+-- Dumping data for table cdc_db.infs: ~6 rows (approximately)
 /*!40000 ALTER TABLE `infs` DISABLE KEYS */;
 INSERT INTO `infs` (`id`, `companyID`, `companyName`, `companyCategory`, `companyWebsite`, `jobDesignation`, `place`, `test`, `salary`, `submitted`, `approved`, `createdAt`, `updatedAt`) VALUES
 	(1, 1, 'bb', 'bbbb', 'bb@b.com', 'bbbb', 'bbbb', 'Test+interview', 565698, 1, 1, '2020-11-02 16:54:05', '2020-11-03 14:35:26'),
 	(2, 2, 'aa', 'aaaa', 'aa@a.com', 'aaaa', 'aaaa', 'An online coding round followed by a meet interview', 246810, 1, 0, '2020-11-02 16:55:32', '2020-11-02 17:12:50'),
 	(3, 3, 'cc', 'cccc', 'cc@c.com', 'cccc', 'cccc', 'CV shortlisting, Coding round, several rounds of interviews, HR interview', 3691215, 1, 1, '2020-11-02 17:18:32', '2020-11-03 14:31:26'),
 	(4, 4, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, '2020-11-03 04:35:36', '2020-11-03 04:35:36'),
-	(5, 5, 'ee', 'eeee', 'ee@e.com', NULL, NULL, 'Interview', 465764, 1, 0, '2020-11-03 12:17:35', '2020-11-03 14:37:56');
+	(5, 5, 'ee', 'eeee', 'ee@e.com', NULL, NULL, 'Interview', 465764, 1, 0, '2020-11-03 12:17:35', '2020-11-03 14:37:56'),
+	(6, 6, 'Amzon', 'MNC', 'www.careers@amzon.com', 'SDE', 'Bangalore', 'Online coding test, Aptitude round, Technical interview - 3, HR round ', 2250000, 1, 1, '2020-11-15 08:03:27', '2020-11-15 08:23:21');
 /*!40000 ALTER TABLE `infs` ENABLE KEYS */;
 
 -- Dumping structure for table cdc_db.regs
@@ -349,16 +352,17 @@ CREATE TABLE IF NOT EXISTS `regs` (
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
--- Dumping data for table cdc_db.regs: ~5 rows (approximately)
+-- Dumping data for table cdc_db.regs: ~6 rows (approximately)
 /*!40000 ALTER TABLE `regs` DISABLE KEYS */;
 INSERT INTO `regs` (`id`, `companyName`, `companyWebsite`, `contactName`, `designation`, `contactNumber`, `contactEmail`, `password`, `permitted`, `createdAt`, `updatedAt`) VALUES
 	(1, 'bb', 'bb@b.com', 'b', 'b', 2222222222, 'b@b.com', 'bbb', 1, '2020-11-02 16:54:05', '2020-11-03 11:48:27'),
 	(2, 'aa', 'aa@a.com', 'a', 'a', 1111111111, 'a@a.com', 'aaa', 1, '2020-11-02 16:55:32', '2020-11-02 16:57:23'),
 	(3, 'cc', 'cc@c.com', 'c', 'c', 3333333333, 'c@c.com', 'ccc', 1, '2020-11-02 17:18:32', '2020-11-02 17:19:22'),
 	(4, 'dd', 'dd@d.com', 'd', 'd', 4444444444, 'd@d.com', 'ddd', 0, '2020-11-03 04:35:36', '2020-11-03 11:48:27'),
-	(5, 'ee', 'ee@e.com', 'e', 'e', 5555555555, 'e@e.com', 'eee', 1, '2020-11-03 12:17:35', '2020-11-03 14:29:45');
+	(5, 'ee', 'ee@e.com', 'e', 'e', 5555555555, 'e@e.com', 'eee', 1, '2020-11-03 12:17:35', '2020-11-03 14:29:45'),
+	(6, 'Amzon', 'www.careers@amzon.com', 'Suresh Agarwal', 'HR campus recruitment', 1122334455, 'suresh@amzon.com', 'qwerty', 1, '2020-11-15 08:03:27', '2020-11-15 08:13:28');
 /*!40000 ALTER TABLE `regs` ENABLE KEYS */;
 
 -- Dumping structure for table cdc_db.users
